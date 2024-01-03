@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-
+    Scanner scanner = new Scanner(System.in);
     public void calcularIndicaMasaCoporal (){
-        Scanner scanner = new Scanner(System.in);
-
         // Peso en KG / altura en metros al cuadrado
         System.out.println("Ingrese su peso:");
         double peso = scanner.nextDouble();
@@ -33,24 +31,17 @@ public class Main {
         // Menor a 18.6 debajo de normal
     }
     public void cacularEdadPerro(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Ingrese la edad del perro:");
         int edad = scanner.nextInt();
         System.out.println("El perro tiene " + edad * 7 + " años en edad canina");
     }
     public void convertirMillas_a_Kilometros(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Ingrese una distancia en Millas:");
         double millas = scanner.nextDouble();
         double kilometros = millas * 1.60934;
         System.out.println("La distancia en Kilómetros es: " + kilometros);
-
     }
     public void calculadoraPropinas(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Ingrese el total de la cuenta:");
         double total = scanner.nextDouble();
         System.out.println("Ingrese el % de la propina");
@@ -60,8 +51,6 @@ public class Main {
         System.out.println("La propina a pagar es: " + totalPropina);
     }
     public void adivinaElNumero(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("Número Aleatorio Generado!");
         System.out.println("==========================)");
 
@@ -78,7 +67,6 @@ public class Main {
         } else{
             System.out.println("No adivinaste al número: [" + nroAleatorio + "] 8-(, Mejor suerte para la proxima.");
         }
-
     }
 
     public static void main(String[] args){
